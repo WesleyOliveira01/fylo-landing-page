@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.cabecalho {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2%;
+  width: 90vw;
+  box-sizing: border-box;
+}
+.cabecalho img {
+  width: 10%;
+}
+.cabecalho .menu {
+  width: 25%;
+}
+.cabecalho .menu ul {
+  display: flex;
+  align-items: center;
+}
+.cabecalho .menu ul li {
+  margin-left: 10%;
+}
+
+.cabecalho-hero {
+  font-family: "Raleway", sans-serif;
+  padding: 5%;
+  align-items: center;
+  display: flex;
+}
+.cabecalho-hero img {
+  width: 50%;
+}
+.cabecalho-hero .cabecalho-hero__container h1 {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  color: #0b092f;
+}
+.cabecalho-hero .cabecalho-hero__container p {
+  line-height: 2em;
+  margin-bottom: 3%;
+  color: #3e3d45;
+}
+.cabecalho-hero .cabecalho-hero__container .btn, .cabecalho-hero .cabecalho-hero__container .email {
+  padding: 2%;
+  border: 1px solid rgba(0, 0, 0, 0.5529411765);
+  border-radius: 3px;
+}
+.cabecalho-hero .cabecalho-hero__container .email {
+  width: 50%;
+}
+.cabecalho-hero .cabecalho-hero__container .btn {
+  width: 25%;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid hsl(224, 93%, 58%);
+  cursor: pointer;
+}
+.cabecalho-hero .cabecalho-hero__container .btn:active {
+  opacity: 0.7;
+}
+
+main .main-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  background-color: #f9f8fe;
+}
+main .main-container .ilustration {
+  width: 40%;
+}
+main .main-container .card, main .main-container .second-card {
+  padding: 1.5rem;
+}
+main .main-container .second-card .profile-card {
+  display: flex;
+  align-items: center;
+}
+main .main-container .second-card .profile-card .profile {
+  border-radius: 100%;
+  width: 5%;
+  margin-right: 10px;
+}
+main .wave {
+  content: "";
+  height: 100px;
+  width: 100%;
+  background-image: url(../../images/bg-curve-desktop.svg);
+}/*# sourceMappingURL=style.css.map */

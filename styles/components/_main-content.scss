@@ -1,0 +1,39 @@
+@import '../abstract/variaveis';
+
+
+main{
+    .main-container{
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+        background-color: $color;
+        .ilustration{
+            width: 40%;
+        }
+    
+        .card,.second-card{
+            padding: 1.5rem;
+        }
+    
+        .second-card{
+            .profile-card{
+                display: flex;
+                align-items: center;
+                .profile{
+                    border-radius: 100%;
+                    width: 5%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    
+    }
+    
+    .wave{
+        content: "";
+        height:100px;
+        width: 100%;
+        background-image: url(../../images/bg-curve-desktop.svg);
+        
+    }
+}

@@ -1,0 +1,73 @@
+@import "../abstract/variaveis";
+
+.cabecalho {
+  font-family: $headerFonts;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin: 0 auto;
+  padding: 2%;
+  width: 90vw;
+  box-sizing: border-box;
+  
+
+  img {
+    width: 10%;
+  }
+
+  .menu {
+    width: 25%;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        margin-left: 10%;
+      }
+    }
+  }
+}
+
+.cabecalho-hero {
+  font-family: $headerFonts;
+  padding: 5%;
+  align-items: center;
+  display: flex;
+
+  img {
+    width: 50%;
+  }
+  .cabecalho-hero__container {
+    h1 {
+      font-size: 2.5em;
+      line-height: 1.5em;
+      color: #0b092f;
+    }
+    p {
+      line-height: 2em;
+      margin-bottom: 3%;
+      color: #3e3d45;
+    }
+
+    .btn, .email{
+      padding: 2%;
+      border: 1px solid #0000008d;
+      border-radius: 3px;
+    }
+
+    .email{
+        width: 50%;
+    }
+    .btn {
+        width: 25%;
+      background-color: $btnColor;
+      color: #fff;
+      font-weight: 600;
+      border: 1px solid $btnColor;
+      cursor: pointer;
+      &:active{
+        opacity: 0.7;
+      }
+    }
+  }
+}
