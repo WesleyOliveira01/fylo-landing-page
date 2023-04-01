@@ -1,39 +1,118 @@
-@import '../abstract/variaveis';
+@import "../abstract/variaveis";
 
+main {
+  line-height: 2rem;
+  .main-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    background-color: $color;
+    padding-bottom: 10%;
+    .ilustration {
+      width: 40%;
+    }
 
-main{
-    .main-container{
+    .card{
+      width: 90%;
+      h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      a{
         display: flex;
-        justify-content: center;
-        padding: 3rem;
-        background-color: $color;
-        .ilustration{
-            width: 40%;
+        align-items: center;
+        color: $color-second;
+        text-decoration: none;
+        &::after{
+          content: '';
+          width: 20px;
+          height: 20px;
+          background:url('../../images/icon-arrow.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: block;
+         margin-left: 5px;
         }
-    
-        .card,.second-card{
-            padding: 1.5rem;
-        }
-    
-        .second-card{
-            .profile-card{
-                display: flex;
-                align-items: center;
-                .profile{
-                    border-radius: 100%;
-                    width: 5%;
-                    margin-right: 10px;
-                }
-            }
-        }
-    
+      }
     }
-    
-    .wave{
-        content: "";
-        height:100px;
-        width: 100%;
-        background-image: url(../../images/bg-curve-desktop.svg);
-        
+
+    .card,
+    .second-card {
+      padding: 1.5rem;
     }
+
+    .second-card {
+      width: 60%;
+      padding: 5%;
+      background-color: #fff;
+      box-shadow: 4px 5px 15px -3px #0000001a;
+      border-radius: 10px;
+
+      &::before{
+        content: '';
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: url(../../images/icon-quotes.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 12px;
+      }
+      .profile-card {
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+        div{
+          line-height: 1.3rem;
+        }
+        .profile {
+          border-radius: 100%;
+          width: 13%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .wave {
+    content: "";
+    height: 100px;
+    width: 100%;
+    background-image: url(../../images/bg-curve-desktop.svg);
+  }
+}
+
+
+.earlyAccess-container{
+  background-color: $color-third;
+  display: flex;
+  color: $color;
+  article{
+    width: 50%;
+    padding: 5%;
+    line-height: 2rem;
+    h1{
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      input{
+        padding: 1rem;
+        margin-bottom: 12px;
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+
+        &[type="submit"]{
+          background-color: $btnColor;
+          width: 40%;
+          color: $color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
