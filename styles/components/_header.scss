@@ -5,11 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 2%;
   width: 90vw;
-  box-sizing: border-box;
   
 
   img {
@@ -18,7 +17,9 @@
 
   .menu {
     width: 25%;
+    box-sizing: border-box;
     ul {
+      
       display: flex;
       align-items: center;
       li {
@@ -33,7 +34,7 @@
   padding: 5%;
   align-items: center;
   display: flex;
-
+  flex-direction: row-reverse;
   img {
     width: 50%;
   }
@@ -49,25 +50,62 @@
       color: #3e3d45;
     }
 
-    .btn, .email{
+    .btn,
+    .email {
       padding: 2%;
       border: 1px solid #0000008d;
       border-radius: 3px;
     }
 
-    .email{
-        width: 50%;
+    .email {
+      width: 50%;
     }
     .btn {
-        width: 25%;
+      width: 25%;
       background-color: $btnColor;
       color: #fff;
       font-weight: 600;
       border: 1px solid $btnColor;
       cursor: pointer;
-      &:active{
+      &:active {
         opacity: 0.7;
       }
     }
   }
+
+  
+}
+@media (max-width:600px) {
+  .cabecalho{
+    width: 100%;
+    padding: 5%;
+    img{
+      width: 20%;
+    }
+    .menu{
+      width: 70%;
+    }
+  }
+  .cabecalho-hero{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    img{
+      width: 80%;
+      margin-bottom: 5%;
+    }
+
+    .cabecalho-hero__container{
+      h1{
+        font-size: 1.5rem;
+      }
+      .btn,.email{
+        width: 80%;
+      }
+      .email{
+        margin-bottom: 12px;
+      }
+    }
+  }
+  
 }

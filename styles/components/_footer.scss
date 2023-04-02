@@ -66,6 +66,23 @@ footer{
                 }
             }
         }
+        
     }
 
+    @media (max-width:600px){
+        .contacts{
+            display: flex;
+            flex-direction: column;
+
+            ul{
+                margin-bottom: 20px;
+            }
+
+            .social-icon{
+                width: 100px;
+                height: 40px;
+            }
+        }
+    }
+    
 }

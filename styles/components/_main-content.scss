@@ -80,6 +80,24 @@ main {
     width: 100%;
     background-image: url(../../images/bg-curve-desktop.svg);
   }
+
+  @media (max-width:600px){
+    .main-container{
+      flex-direction: column-reverse;
+      text-align: center;
+      .ilustration{
+        width: 100%;
+      }
+  
+      .card{
+        font-size: 1rem;
+      }
+  
+      .second-card{
+        width: 100%;
+      }
+    }
+  }
 }
 
 
@@ -111,6 +129,26 @@ main {
           width: 40%;
           color: $color;
           font-weight: bold;
+        }
+      }
+    }
+  }
+
+ 
+}
+@media(max-width:600px){
+  .earlyAccess-container{
+    flex-direction: column;
+    article{
+      width: 100%;
+      text-align: center;
+      form{
+        width: 100%;
+        input{
+          width: 100%;
+          &[type='submit']{
+            width: 100%;
+          }
         }
       }
     }
